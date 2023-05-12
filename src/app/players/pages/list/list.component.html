@@ -1,0 +1,20 @@
+<h1>players</h1>
+<mat-divider></mat-divider>
+
+<div
+  fxLayout="row wrap"
+  fxLayout.xs="column"
+  fxLayoutAlign="center"
+  fxLayoutGap="20px grid"
+  [@listAnimation]="players.length"
+>
+  <div
+    fxFlex="20"
+    fxFlex.lg="15"
+    fxFlex.sm="30"
+    *ngFor="let player of players"
+    class="animate__animated animate__fadeIn"
+  >
+    <app-player-card [player]="player"></app-player-card>
+  </div>
+</div>

@@ -1,0 +1,41 @@
+<div fxLayout="column" class="animate__animated animate__fadeIn">
+  <div>
+    <h1>players Search</h1>
+    <mat-divider></mat-divider>
+  </div>
+  <div fxLayout="column">
+    <h3>Search</h3>
+
+    <mat-form-field>
+      <mat-label>Search Term:</mat-label>
+      <input
+        type="text"
+        placeholder="Pick one"
+        aria-label="Number"
+        matInput
+        [(ngModel)]="term"
+        [matAutocomplete]="auto"
+        (ngModelChange)="changed()"
+      />
+
+      <mat-autocomplete
+        autoActiveFirstOption
+        #auto="matAutocomplete"
+        class="autocomplete"
+        (optionSelected)="optionSelected($event)"
+      >
+        <mat-option *ngFor="let player of players" [value]="player">
+          {{ player.name }}
+        </mat-option>
+
+        <mat-option value="" *ngIf="players.length === 0 && term.length > 0">
+          Nothing found with the term: {{ term }}
+        </mat-option>
+      </mat-autocomplete>
+    </mat-form-field>
+  </div>
+
+  <div *ngIf="selectedplayer">
+    <app-player-card [player]="selectedplayer"></app-player-card>
+  </div>
+</div>

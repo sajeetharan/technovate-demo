@@ -1,0 +1,8 @@
+type Player @model {
+  id: ID
+  name: String
+  type: String
+  country: String
+  picture_link: String
+  city: String
+}

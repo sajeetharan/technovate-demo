@@ -1,0 +1,41 @@
+[
+    {
+        "id": "1",
+        "name": "MS DHINI",
+        "type": "Wicket keeper",
+        "country": "India",
+        "city": "Chennai",
+        "picture_link": "https://www.imgbly.com/ib/gBzpuv7ylu.png",
+        "_rid": "PkN3AOS4PpMCAAAAAAAAAA==",
+        "_self": "dbs/PkN3AA==/colls/PkN3AOS4PpM=/docs/PkN3AOS4PpMCAAAAAAAAAA==/",
+        "_etag": "\"c50095ce-0000-0700-0000-645e79190000\"",
+        "_attachments": "attachments/",
+        "_ts": 1683912985
+    },
+    {
+        "id": "2",
+        "name": "DEVON CONWAY",
+        "type": "Batsman",
+        "country": "Newzealand",
+        "city": "Chennai",
+        "picture_link": "https://bcciplayerimages.s3.ap-south-1.amazonaws.com/ipl/IPLHeadshot2023/601.png",
+        "_rid": "PkN3AOS4PpMDAAAAAAAAAA==",
+        "_self": "dbs/PkN3AA==/colls/PkN3AOS4PpM=/docs/PkN3AOS4PpMDAAAAAAAAAA==/",
+        "_etag": "\"c5003ad0-0000-0700-0000-645e79410000\"",
+        "_attachments": "attachments/",
+        "_ts": 1683913025
+    },
+    {
+        "id": "11",
+        "name": "Jos Buttler",
+        "type": "Batsman",
+        "country": "England",
+        "city": "Rajastan",
+        "picture_link": "https://bcciplayerimages.s3.ap-south-1.amazonaws.com/ipl/IPLHeadshot2023/182.png",
+        "_rid": "PkN3AOS4PpMMAAAAAAAAAA==",
+        "_self": "dbs/PkN3AA==/colls/PkN3AOS4PpM=/docs/PkN3AOS4PpMMAAAAAAAAAA==/",
+        "_etag": "\"c5008ff2-0000-0700-0000-645e7ca70000\"",
+        "_attachments": "attachments/",
+        "_ts": 1683913895
+    }
+]

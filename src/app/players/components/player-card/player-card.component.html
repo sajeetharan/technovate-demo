@@ -1,0 +1,19 @@
+<mat-card>
+  <mat-card-header>
+    <mat-card-title>{{ player.name }}</mat-card-title>
+    <mat-card-subtitle class="red-text">{{ player.city }}</mat-card-subtitle>
+  </mat-card-header>
+  <img mat-card-image [src]="player | image" />
+  <mat-card-content class="blue-text">
+    <h3>{{ player.country }}</h3>
+  </mat-card-content>
+
+  <mat-card-actions>
+    <button mat-button color="accent" [routerLink]="['', player.id]">
+      Read more...
+    </button>
+    <button mat-button color="accent" [routerLink]="['/edit', player.id]">
+      EDIT
+    </button>
+  </mat-card-actions>
+</mat-card>

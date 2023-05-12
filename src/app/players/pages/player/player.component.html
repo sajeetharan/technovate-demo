@@ -1,0 +1,28 @@
+<mat-grid-list cols="1" *ngIf="!player; else divplayer">
+  <mat-grid-tile>
+    <mat-spinner></mat-spinner>
+  </mat-grid-tile>
+</mat-grid-list>
+
+<ng-template #divplayer>
+  <div fxLayout="row" fxLayout.xs="column" fxLayoutGap="30px">
+    <div fxFlex="50">
+      <h1>
+        {{ player.name }} <small> - {{ player.city }}</small>
+      </h1>
+      <mat-divider></mat-divider>
+      <img [src]="player | image" />
+    </div>
+
+    <div fxFlex="50">
+      <h1>{{ player.type }}</h1>
+      <mat-list>
+        <mat-list-item>Team : {{ player.city }}</mat-list-item>
+        <mat-list-item>Country : {{ player.country }}</mat-list-item>
+        <mat-list-item>Type : {{ player.type }}</mat-list-item>
+      </mat-list>
+      <br />
+      <button mat-button color="warn" (click)="comeBack()">Go back</button>
+    </div>
+  </div>
+</ng-template>
