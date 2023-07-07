@@ -29,7 +29,7 @@
   },
   "entities": {
     "Player": {
-      "source": "ipl2023",
+      "source": "slpl2023",
       "permissions": [
         {
           "actions": [
