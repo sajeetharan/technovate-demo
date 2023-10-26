@@ -29,7 +29,7 @@
   },
   "entities": {
     "Player": {
-      "source": "slpl2023",
+      "source": "worldcup2023",
       "permissions": [
         {
           "actions": [
